@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form using table tag</title>
+</head>
+
+<body><h3>Application Form</h3>
+    <form>
+    <table>
+        <tr>
+            <td><strong>Basic Details: </strong></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="fname" name="fname" size="50" placeholder="First Name" required></td>
+            <td><input type="text" id="midname" name="midname" size="50" placeholder="Middle Name"></td>
+            <td><input type="text" id="lname" name="lname" size="50" placeholder="Last Name"></td>
+        </tr>
+        <tr>
+            <td><input type="email" id="email" name="email" size="50" placeholder="Email" required></td>
+        </tr>
+        <tr>
+            <td><input type="password" id="pwd" name="pwd" minlength="8" maxlength="15" size="50" placeholder="Password" required></td>
+            <td><input type="password" id="pwd" name="pwd" minlength="8" maxlength="15" size="50" placeholder="Re-enter Password" required></td>
+        </tr>
+        <tr>
+            <td><input type="tel" id="phone" name="phone" placeholder="phone number" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" size="50" required></td>
+            <td><input type="text" id="add" name="add" placeholder="address" size="50"></td>
+            <td><input type="date" id="birthday" name="birthday"></td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td><strong>Gender: </strong></td>
+        </tr>
+        <tr>
+            <td><input type="radio" id="male" name="fav_language" value="male">
+                <label for="male">Male</label></td>
+            <td><input type="radio" id="female" name="fav_language" value="female">
+                <label for="female">Female</label></td>
+            <td><input type="radio" id="others" name="fav_language" value="others">
+                <label for="others">Others</label></td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td><strong>Academic Details: </strong></td>
+        </tr>
+        <tr>
+            <td>College Name:</td>
+            <td><select id="cn" name="cn" required>
+                <option value="GMRIT">GMR Institute of Technology</option>
+                <option value="JNTUK">Jawaharlal Nehru Technological University Kakinada</option>
+                <option value="AU">Andhra University</option>
+                <option value="KLU">Koneru Lakshmaiah University</option>
+                <option value="VRSEC">Velagapudi Rama krishna Siddhartha Engineering College</option>
+                <option value="SRKR">Sagi Ramakrishnam Raju Engineering College</option>
+                <option value="PVPSIT">Prasad V. Potluri Siddhartha Institute Of Technology</option>
+                <option value="GIET">Godavari Institute of Engineering and Technology</option>
+                <option value="GVPCE">Gayatri Vidya Parishad College of Engineering</option>
+                <option value="AEC">Aditya Engineering College</option>
+                <option value="SVEC">SRi Vasavi Engineering College</option>
+                <option value="GITAM">Gandhi Institute of Technology and Managemen</option>
+                <option value="VITAP">Vellore Institute of Technology Andhra Pradesh</option>
+                <option value="PEC">Pragati Engineering College</option>
+                <option value="SVES">Vishnu Institute of Technology & Sciences</option>
+                <option value="MVGR">Maharaj Vijayaram Gajapathi Raj College of Engineering&nbsp;&nbsp;&nbsp;</option>
+                <option value="RIT">Raghu Institute of Technology</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Branch Name:</td>
+            <td><select id="branch" name="branch" required>
+                <option value="cse">Computer Science & Engineering (CSE)</option>
+                <option value="it">Information Technology (IT)</option>
+                <option value="ece">Electronics and Communications Engineering (ECE)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                <option value="eee">Electrical &  Electronics Engineering (EEE)</option>
+                <option value="civil">Civil Engineering (CE)</option>
+                <option value="mech">Mechanical Engineering (ME)</option>
+                <option value="chemical">Chemical Engineering (Chem E)</option>
+                <option value="power">Power Engineering (PE)</option>
+                <option value="ae">Aerospace Engineering (AE)</option>
+                <option value="me">Mechatronics Engineering (ME)</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Joined Year:</td>
+            <td><input type="number" id="quantity" name="quantity" min="2015" max="2020" step="1"></td>
+        </tr>
+        <tr>
+            <td>Passed Year:</td>
+            <td><input type="number" id="quantity" name="quantity" min="2020" max="2025" step="1"></td>
+        </tr>
+        <tr>
+            <td>Location:</td>
+            <td><input type="text" id="loc" name="loc" size="50"></td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td><strong>Company Details: </strong></td>
+        </tr>
+        <tr>
+            <td>How do you get to know:</td>
+            <td><input list="browsers" name="source"  id="source">
+            <datalist id="browsers">
+            <option value="Social Media">
+            <option value="Job Referal">
+            <option value="Career Portal">
+            <option value="Campus">
+            <option value="Others">
+            </datalist></input></td>
+        </tr>
+        <tr>
+            <td>Message to Hiring Manager:</td>
+            <td rowspan="2"><textarea name="message" cols="47"></textarea></td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>HR Name:</td>
+            <td><input type="text" id="hrname" name="hrname" value="Ganesh Manda" readonly></td>
+        </tr>
+        <tr>
+            <td>Manager Name:</td>
+            <td><input type="text" id="mname" name="mname" value="Vishnu Manoj" disabled></td>
+        </tr>
+        <tr>
+            <td>Have you ever been employed any of their subsidiaries:</td>
+            <td><input type="radio" id="yes" name="fav_language" value="Yes">
+                <label for="fav_language">Yes</label></td>
+            <td><input type="radio" id="no" name="fav_language" value="No">
+                <label for="fav_language">No</label></td>
+            
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td> </td>
+            <td><input type="checkbox" id="ack" name="ack" value="ack">Acknowledgement for Personal Information.</td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td><input type="checkbox" id="terms" name="terms">I have also read the Privacy Policy and the Career Submission Terms.</td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="Reset"></td>
+            <td><a href="success.html"><input type="button" value="Submit"></a></td>
+            <!--td><button onclick="myFunction()">Submit</button></td-->
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
